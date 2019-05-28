@@ -37,7 +37,7 @@ html,body{
 }
 
 .about_container {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -61,6 +61,30 @@ html,body{
 }
 
 
+.about_social>a {
+  background-color: #c23b0e;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.about_desc>p>a{
+    color: #c23b0e;
+}
+
+.about_social>a:hover {
+  background-color: #da6842;
+}
+
+.about_social>a:active {
+  background-color: black;
+}
+
+.about_social>a:visited {
+  background-color: #ccc;
+}
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -71,6 +95,9 @@ html,body{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: unset;
+    }
+    .about_social{
+        margin-top:3em;    
     }
   }
   
@@ -83,6 +110,9 @@ html,body{
     .main_container{
         display: grid;
         grid-template-columns: 1fr 1fr
+    }
+    .about_social{
+        margin-top:3em;    
     }
   }
   
@@ -132,6 +162,14 @@ html,body{
     }
     .about_container{
         margin-top: 3em;
+    }
+    .about_social{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_social>a {
+        margin: 3px;
     }
     
   }
